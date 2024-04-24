@@ -1,6 +1,6 @@
 import React from 'react'
 import './homePage.scss'
-import SearchBar from '../../components/navbar/searchBar/SearchBar'
+import SearchBar from '../../components/searchBar/SearchBar'
 const HomePage = () => {
   return (
     <div className="homePage">
