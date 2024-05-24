@@ -3,6 +3,8 @@ import './listPage.scss'
 import { listData } from '../../lib/dummydata'
 import Filter from '../../components/filter/filter'
 import Card from '../../components/card/card'
+import { MapContainer } from 'react-leaflet'
+import MapComponent from '../../components/map/map'
 const ListPage = () => {
   const data = listData
 
@@ -16,7 +18,9 @@ const ListPage = () => {
           ))}
         </div>
       </div>
-      <div className="mapContainer">Map</div>
+      <div className="mapContainer">
+        <MapComponent items={data} />
+      </div>
     </div>
   )
 }
